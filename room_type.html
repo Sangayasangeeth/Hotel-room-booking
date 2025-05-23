@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Type</title>
+    <link rel="stylesheet" href="room_type.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="room_type_save.php" method="post" id="form" name="form">
+            <h1>Room Type</h1>
+            <div class="container2">
+                <label for="room_type_id">Room Type ID</label>
+                <input type="text" id="room_type_id" name="room_type_id" placeholder="Enter Room ID">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="room_type">Room Type</label>
+                <input type="text" id="room_type" name="room_type" placeholder="Enter  Room Type">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="room_size">Room  Size</label>
+                <input type="text" id="room_size" name="room_size" placeholder="Enter  Room Size">
+                <small>Error Message</small>
+            </div>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+    <script  src="room_type.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,397 @@
+this is branch.html{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management</title>
+    <link rel="stylesheet" href="branch.css">    
+</head>
+<body>
+    <div class="container">
+        <form action="save_branch.php" method="post" id="form">
+            <h1>BRANCH CREATION</h1>
+            <div class="container2">
+                <label for="branch_id">Branch ID</label>
+                <input type="text" id="branch_id" name="branch_id" oninput="valid_id()" placeholder="Enter Branch ID">
+                <small>Error Message</small> <!-- This small tag will show the error message -->
+            </div>
+            
+            <div class="container2">
+                <label for="branch_name">Branch Name</label>
+                <input type="text" id="branch_name" name="branch_name" oninput="valid_name()" placeholder="Enter Branch Name">
+                <small>Error Message</small>
+            </div>
+            
+            <div class="container2">
+                <label for="branch_add">Branch Address</label>
+                <input type="text" id="branch_add" name="branch_add" oninput="valid_address()" placeholder="Enter Branch Address">
+                <small>Error Message</small>
+            </div>
+            
+            <div class="container2">
+                <label for="branch_num">Branch Phone number</label>
+                <input type="number" id="branch_num" name="branch_num" oninput="valid_number()" placeholder="Enter Branch Phone number">
+                <small>Error Message</small>
+            </div>
+            
+
+            <button type="submit"> SUBMIT</button>
+            <br><br>    
+
+            <a href="view_branches.php">Click here to view saved details</a>
+        </form>
+    </div>
+    <script src="branch.js"></script>
+</body>
+</html>
+}
+
+this is booking page named booking,html{
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking details</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="save_booking.php" method="post" id="form" name="form">
+            <h1>Booking Details</h1>
+            <div class="container2">
+                <label for="booking_id">Booking ID</label>
+                <input type="text" id="booking_id" name="booking_id" placeholder="Enter Booking ID">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="booking_date">Booking Date and Time</label>
+                <input type="datetime-local" id="booking_date" name="booking_date" placeholder="DD/MM/YYYY">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="room_id">Room ID</label>
+                <input type="text" id="room_id" name="room_id" placeholder="Enter  Room ID">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="cust_id">Customer ID</label>
+                <input type="text" id="cust_id" name="cust_id" placeholder="Enter Customer ID">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="check_in">Check-In Date</label>
+                <input type="date" id="check_in" name="check_in" placeholder="DD/MM/YYYY">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="check_out">Check-Out Date</label>
+                <input type="date" id="check_out" name="check_out" placeholder="DD/MM/YYYY">
+                <small>Error Message</small>
+            </div>
+            <button type="submit">SUBMIT</button>
+        </form>
+        <br>
+        <a href="view_booking.php">Click here to view Early Bookings !!</a>
+    </div>
+    <script  src="booking.js"></script>
+
+
+</body>
+
+</html>
+}
+
+this is room booking page named room.html{
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Type</title>
+    <link rel="stylesheet" href="room.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="save_room.php" method="post" id="form" name="form">
+            <h1>Room Type</h1>
+            <div class="container2">
+                <label for="room_id">Room ID</label>
+                <input type="text" id="room_id" name="room_id" placeholder="Enter Room ID">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="room_type_id">Room Type ID</label>
+                <input type="text" id="room_type_id" name="room_type_id" placeholder="Enter Room Type ID">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="branch_id">Branch ID</label>
+                <input type="text" id="branch_id" name="branch_id" placeholder="Enter Branch ID">
+                <small>Error Message</small>
+            </div>
+            <button type="submit">SUBMIT</button>
+            <br><br>
+            <a href="view_room.php">Click here to view Saved Details</a>
+        </form>
+    </div>
+    <script  src="room.js"></script>
+
+
+
+</body>
+
+</html>
+}
+
+this is customer detial page named cudtomer.html{
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management</title>
+    <link rel="stylesheet" href="customer.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="save_customer.php" method="post" id="form">
+            <h1>Customer Details</h1>
+
+
+            <div class="container2">
+                <label for="cust_id">Customer ID</label>
+                <input type="text" id="cust_id" name="cust_id" placeholder="Enter Customer ID">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="cust_name">Customer Name</label>
+                <input type="text" id="cust_name" name="cust_name" placeholder="Enter Customer Name">
+                <small>Error Message</small>
+            </div>
+
+
+            <div class="form_row">
+                <div class="container2">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender">
+                        <option id="selcol" value="Select" disabled selected>Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="container2">
+                    <label for="cust_num">Customer Phone number</label>
+                    <input type="text" id="cust_num" name="cust_num" placeholder="Enter Phone number">
+                    <small>Error Message</small>
+                </div>
+            </div>
+
+
+            <div class="container2">
+                <label for="cust_email">Customer Email</label>
+                <input type="email" id="cust_email" name="cust_email" placeholder="Enter a valid email address">
+                <small>Error Message</small>
+            </div>
+
+
+            <div class="container2">
+                <label for="cust_add">Customer Address</label>
+                <input type="text" id="cust_add" name="cust_add" placeholder="Enter your Address">
+                <small>Error Message</small>
+            </div>
+
+
+            <div class="container2">
+                <label for="proof">Select ID proof type</label>
+                <select name="proof" id="proof">
+                    <option id="selcol" value="Select" disabled selected>Select</option>
+                    <option value="PAN Card">PAN Card</option>
+                    <option value="Aadhar Card">Aadhar Card</option>
+                    <option value="Driving License">Driving License</option>
+                    <option value="Voter ID">Voter ID</option>
+                </select>
+                <small>Error Message</small>
+            </div>
+
+
+            <div class="container2">
+                <label for="cust_proof_no">ID proof number</label>
+                <input type="text" id="cust_proof_no" name="cust_proof_no" placeholder="Enter ID Proof Number">
+                <small>Error Message</small>
+            </div>
+
+
+            <button type="submit">SUBMIT</button>
+            <br><br>
+            <a href="view_customer.php">Click here to view Saved Details</a>
+
+        </form>
+    </div>
+ 
+    <script src="customer.js"></script> 
+</body>
+
+</html>
+}
+
+this is payment page named payment.html{
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="save_payment.php" method="post" id="form" name="form">
+            <h1>Payment Details</h1>
+            <div class="container2">
+                <label for="booking_id">Booking ID</label>
+                <input type="text" id="booking_id" name="booking_id" placeholder="Enter Booking ID">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="amount_adv">Advance Paid</label>
+                <input type="text" id="amount_adv" name="amount_adv" placeholder="Enter Advance Paid">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="amount_total">Total Amount</label>
+                <input type="text" id="amount_total" name="amount_total" placeholder="Enter Total Amount">
+                <small>Error Message</small>
+            </div>
+            <button type="submit">SUBMIT</button>
+            <br><br>
+            <a href="view_payment.php">Click here to view Saved Details</a>
+        </form>
+    </div>
+    <script  src="payment.js"></script>
+
+
+
+</body>
+
+</html>
+
+}
+ this is room tariff page named room_tariff.html{
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Type</title>
+    <link rel="stylesheet" href="room_tariff.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="tariff_save.php" method="post" id="form" name="form">
+            <h1>Room Type</h1>
+            <div class="container2">
+                <label for="room_type_id">Room Type ID</label>
+                <input type="text" id="room_type_id" name="room_type_id" placeholder="Enter Room Type ID">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="tariff">Enter Tariff</label>
+                <input type="text" id="tariff" name="tariff" placeholder="Enter Tariff">
+                <small>Error Message</small>
+            </div>
+
+            <button type="submit">SUBMIT</button>
+            <br><br>
+            <a href="tariff_view.php">Click here to view Saved Details</a>
+        </form>
+    </div>
+    <script  src="room_tariff.js"></script>
+
+
+
+</body>
+
+</html>
+
+
+}
+
+this is room type page name{
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Type</title>
+    <link rel="stylesheet" href="room_type.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="room_type_save.php" method="post" id="form" name="form">
+            <h1>Room Type</h1>
+            <div class="container2">
+                <label for="room_type_id">Room Type ID</label>
+                <input type="text" id="room_type_id" name="room_type_id" placeholder="Enter Room ID">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="room_type">Room Type</label>
+                <input type="text" id="room_type" name="room_type" placeholder="Enter  Room Type">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="room_size">Room  Size</label>
+                <input type="text" id="room_size" name="room_size" placeholder="Enter  Room Size">
+                <small>Error Message</small>
+            </div>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+    <script  src="room_type.js"></script>
+
+
+</body>
+
+</html>
+}
+
+
+
+
+
+

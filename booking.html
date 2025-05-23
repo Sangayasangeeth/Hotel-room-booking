@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking details</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="save_booking.php" method="post" id="form" name="form">
+            <h1>Booking Details</h1>
+            <div class="container2">
+                <label for="booking_id">Booking ID</label>
+                <input type="text" id="booking_id" name="booking_id" placeholder="Enter Booking ID">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="booking_date">Booking Date and Time</label>
+                <input type="datetime-local" id="booking_date" name="booking_date" placeholder="DD/MM/YYYY">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="room_id">Room ID</label>
+                <input type="text" id="room_id" name="room_id" placeholder="Enter  Room ID">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="cust_id">Customer ID</label>
+                <input type="text" id="cust_id" name="cust_id" placeholder="Enter Customer ID">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="check_in">Check-In Date</label>
+                <input type="date" id="check_in" name="check_in" placeholder="DD/MM/YYYY">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="check_out">Check-Out Date</label>
+                <input type="date" id="check_out" name="check_out" placeholder="DD/MM/YYYY">
+                <small>Error Message</small>
+            </div>
+            <button type="submit">SUBMIT</button>
+        </form>
+        <br>
+        <a href="view_booking.php">Click here to view Early Bookings !!</a>
+    </div>
+    <script  src="booking.js"></script>
+
+
+</body>
+
+</html>

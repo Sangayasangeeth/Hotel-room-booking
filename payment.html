@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="save_payment.php" method="post" id="form" name="form">
+            <h1>Payment Details</h1>
+            <div class="container2">
+                <label for="booking_id">Booking ID</label>
+                <input type="text" id="booking_id" name="booking_id" placeholder="Enter Booking ID">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="amount_adv">Advance Paid</label>
+                <input type="text" id="amount_adv" name="amount_adv" placeholder="Enter Advance Paid">
+                <small>Error Message</small>
+            </div>
+
+            <div class="container2">
+                <label for="amount_total">Total Amount</label>
+                <input type="text" id="amount_total" name="amount_total" placeholder="Enter Total Amount">
+                <small>Error Message</small>
+            </div>
+            <button type="submit">SUBMIT</button>
+            <br><br>
+            <a href="view_payment.php">Click here to view Saved Details</a>
+        </form>
+    </div>
+    <script  src="payment.js"></script>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+

@@ -1,0 +1,156 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/index.jpg'); /* Add your image path here */
+    background-size: cover; /* Makes the background image cover the whole page */
+    background-position: center center; /* Ensures the image is centered */
+    background-attachment: fixed; /* Makes the background stay fixed while scrolling */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Keeps footer at the bottom */
+    min-height: 100vh; /* Full viewport height */
+    transition: background-color 0.5s ease; /* Smooth background color transition */
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-top: 2rem;
+    animation: slideInFromTop 1s ease-out;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #373739; /* Light color to contrast the background */
+    animation: fadeIn 1.5s ease-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ddd; /* Light grey for the text */
+    margin: 1rem 0 2rem;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards 0.5s;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideInFromTop {
+    0% { transform: translateY(-100px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Navigation */
+nav {
+    background-color: rgba(183, 198, 222, 0.249); /* Semi-transparent background */
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 16px;
+    background-color: #2e333d6d;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+nav ul li a:hover {
+    background-color: #6a6fa1;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Info Section */
+.contact-info {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(176, 196, 184, 0.808); /* Semi-transparent background */
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+    margin: 2rem auto;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.contact-info h2 {
+    color: #435a44;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Animation: Fade In Up */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #6f8fb4a7;
+    color: white;
+    padding: 1.5rem 0;
+    width: 100%;
+    position: relative;
+    margin-top: auto; /* Keeps footer at the bottom */
+    animation: fadeIn 1s ease-out forwards;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+/* Adding a subtle hover effect on the footer */
+footer:hover {
+    background-color: #1d3572d5;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
